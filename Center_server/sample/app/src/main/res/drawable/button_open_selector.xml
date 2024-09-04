@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Состояние для кнопки, когда она выключена -->
+    <item android:state_enabled="false">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/gray" /> <!-- Цвет фона при выключенном состоянии -->
+            <corners android:radius="5dp" /> <!-- Радиус скругления углов при выключенном состоянии -->
+        </shape>
+    </item>
+
+    <!-- Состояние для кнопки, когда она включена -->
+    <item android:state_enabled="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/blue" /> <!-- Цвет фона при включенном состоянии -->
+            <corners android:radius="5dp" /> <!-- Радиус скругления углов при включенном состоянии -->
+        </shape>
+    </item>
+</selector>

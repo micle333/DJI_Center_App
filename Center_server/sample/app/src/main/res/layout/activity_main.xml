@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:padding="16dp">
+
+    <!-- Connection Status TextView -->
+
+    <!-- Product Info TextView -->
+    <TextView
+        android:id="@+id/connection_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/black"
+        android:textColor="@color/white"
+        android:text="Connection Status: "
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text_connection_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/connection_status"
+        android:background="@android:color/black"
+        android:text="Disconnected"
+        android:textSize="14sp" />
+
+
+    <TextView
+        android:id="@+id/product_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_connection_status"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/black"
+        android:textColor="@color/white"
+        android:text="Device Version: "
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <!-- Model Available TextView -->
+    <TextView
+        android:id="@+id/text_product_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_connection_status"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/product_version"
+        android:background="@android:color/black"
+        android:text="Product Info"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/product_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/product_version"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/black"
+        android:textColor="@color/white"
+        android:text="Device Name: "
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text_model_available"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_product_info"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/product_name"
+        android:background="@android:color/black"
+        android:text="N/A"
+
+        android:textSize="14sp" />
+
+    <!-- Open Button -->
+    <Button
+        android:id="@+id/btn_open"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/button_open_selector"
+        android:text="Open"
+        android:textColor="@drawable/button_text_color_selector" />
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="7dp"
+        android:layout_toStartOf="@+id/imageView"
+        android:background="@android:color/black"
+        android:textColor="@color/white"
+        android:text="Center App"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="33dp"
+        android:layout_height="33dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/center_icon_quad" />
+
+
+</RelativeLayout>
